@@ -1,0 +1,12 @@
+#Ignore_everything
+*
+
+#exception_rule
+!.md
+!.gitignore
+!*/
+!*.html
+!*.js
+!*.jsx
+!*.css
+!*.json

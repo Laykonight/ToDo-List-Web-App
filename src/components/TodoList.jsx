@@ -69,9 +69,6 @@ export const TodoList = () => {
 
               const sortedTasks = sortAndCombineLists();
               setTasks(sortedTasks);
-
-              // emptyLists();
-              // sortedTasks.length = 0;
             } else {
               await addDoc(userCollectionRef, {});
               setTasks([]);
@@ -312,7 +309,7 @@ export const TodoList = () => {
             />
           </div>
           <div // title
-            className="title col display-4 text-center fw-bold mb-5"
+            className="title col display-4 text-xl text-center fw-bold mb-5"
           >
             My ToDo List
           </div>
@@ -326,6 +323,8 @@ export const TodoList = () => {
               mode={modeClass}
               addDoc={addDoc}
               tasks={tasks}
+              user={user}
+              setUser={setUser}
               rerenderFlag={rerenderFlag}
               setRerenderFlag={setRerenderFlag}
               getPriorityValue={(priority) => getPriorityValue(priority)}

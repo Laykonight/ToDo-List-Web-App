@@ -25,11 +25,13 @@ export const TaskForm = ({
   addDoc,
   tasks,
   rerenderFlag,
+  user,
+  setUser,
   setRerenderFlag,
   className,
 }) => {
   const [taskInput, setTaskInput] = useState("");
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
   const [priority, setPriority] = useState("LOW");
   const [deadline, setDeadline] = useState(null);
   const [showDeadlineCard, setShowDeadlineCard] = useState(false);
